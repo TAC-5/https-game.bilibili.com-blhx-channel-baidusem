@@ -66,6 +66,39 @@ body {
   color: #222222;
 }
 
+.next {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding-top: 42px;
+  z-index: 1;
+}
+
+.next .right {
+  position: absolute;
+  width: 387px;
+  height: 54px;
+  right: 0;
+  top: 0;
+  background-image: url(../image/border0.png);
+}
+
+.next .right ul {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  left: 78px;
+}
+
+.next .right ul li {
+  display: inline-block;
+  width: 15%;
+}
+
+.next .right ul li img {
+  position: absolute;
+}
+
 .subject {
   position: relative;
 }
@@ -76,29 +109,15 @@ body {
   background-image: url(../upload/bg.jpg);
 }
 
-.subject .subject-top-right {
-  width: 387px;
-  height: 54px;
-  float: right;
-  background-image: url(../image/border0.png);
+.subject .subject-left {
+  position: relative;
+  width: 647px;
+  height: 100%;
+  padding-top: 80px;
 }
 
-.subject .subject-top-right a:nth-child(1) {
-  position: absolute;
-  width: 32px;
-  height: 46px;
-}
-
-.subject .subject-top-right a:nth-child(1) span:nth-child(1) {
-  position: absolute;
-  width: 32px;
-  height: 46px;
-  background-repeat: no-repeat;
-  background-image: url(../image/border1.png);
-}
-
-.subject .subject-top-right a:nth-child(1) span:nth-child(1):hover {
-  color: palegreen;
+.subject .subject-left .logo {
+  float: left;
 }
 
 .subject .subject-center {

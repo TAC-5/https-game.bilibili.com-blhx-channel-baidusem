@@ -76,6 +76,41 @@ body {
     }
 }
 
+// 顶部图标右边链接
+.next {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding-top: 42px;
+    // background-color: orangered;
+    z-index: 1;
+
+    .right {
+        position: absolute;
+        width: 387px;
+        height: 54px;
+        right: 0;
+        top: 0;
+        background-image: url(../image/border0.png);
+
+        ul {
+            position: absolute;
+            width: 80%;
+            height: 100%;
+            left: 78px;
+
+            li {
+                display: inline-block;
+                width: 15%;
+
+                img {
+                    position: absolute;
+                }
+            }
+        }
+    }
+
+}
 // 中间主题
 .subject {
     position: relative;
@@ -86,28 +121,15 @@ body {
         background-image: url(../upload/bg.jpg);
     }
 
-    .subject-top-right {
-        width: 387px;
-        height: 54px;
-        float: right;
-        background-image: url(../image/border0.png);
+    .subject-left {
+        position: relative;
+        width: 647px;
+        height: 100%;
+        padding-top: 80px;
 
-        a:nth-child(1) {
-            position: absolute;
-            width: 32px;
-            height: 46px;
 
-            span:nth-child(1) {
-                position: absolute;
-                width: 32px;
-                height: 46px;
-                background-repeat: no-repeat;
-                background-image: url(../image/border1.png);
-
-                &:hover {
-                    color: palegreen;
-                }
-            }
+        .logo {
+            float: left;
         }
     }
 
