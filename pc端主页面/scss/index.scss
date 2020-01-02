@@ -1,0 +1,389 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    bottom: 0;
+}
+
+// 顶部导航
+.nav {
+    position: relative;
+    width: 100%;
+    height: 42px;
+    // background-color: green;
+
+    .nav-center {
+        // position: absolute;
+        width: 980px;
+        height: 100%;
+        margin: 0 auto;
+        background-color: #ffffff;
+
+        .nav-center-left {
+            float: left;
+            left: 0px;
+            line-height: 40px;
+
+            ul {
+                margin-left: -10px;
+
+                li {
+                    display: inline-block;
+                    padding-left: 10px;
+
+                    a {
+                        color: #222222;
+                    }
+                }
+            }
+        }
+
+        .nav-center-center {
+            width: 80px;
+            height: 36px;
+            float: left;
+            margin: 7px 0 0 15px;
+            // background-color: purple;
+
+            img {
+                float: right;
+                margin-top: 5px;
+            }
+        }
+
+        .nav-center-right {
+            float: right;
+            width: 464px;
+            height: 100%;
+            line-height: 42px;
+            // background-color: seagreen;
+
+
+            ul {
+
+
+                li {
+                    display: inline-block;
+                    margin-left: 10px;
+
+                    a {
+                        color: #222222;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 顶部图标右边链接
+.next {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding-top: 42px;
+    // background-color: orangered;
+    z-index: 1;
+
+    .right {
+        position: absolute;
+        width: 387px;
+        height: 54px;
+        right: 0;
+        top: 0;
+        background-image: url(../image/border0.png);
+
+        ul {
+            position: absolute;
+            width: 80%;
+            height: 100%;
+            left: 78px;
+
+            li {
+                display: inline-block;
+                width: 15%;
+
+                img {
+                    position: absolute;
+                }
+
+                img:hover {
+                    color: #7bf5e0;
+                }
+            }
+        }
+    }
+
+}
+
+// 中间主题
+.subject {
+    position: relative;
+
+    .subject-top {
+        width: 100%;
+        height: 1141px;
+        background-image: url(../upload/bg.jpg);
+    }
+
+    .subject-left {
+        position: relative;
+        width: 647px;
+        height: 828px;
+        padding: 60px 0px 0 230px;
+
+
+        .logo {
+            float: left;
+
+            .logo-left {
+
+                span {
+                    position: absolute;
+                    width: 227px;
+                    height: 191px;
+                    background-image: url(../image/qrcode-box.png);
+                    right: 145px;
+                    top: 303px;
+                }
+            }
+        }
+
+        .lunbo {
+            position: absolute;
+            width: 470px;
+            height: 166px;
+            bottom: 205px;
+            overflow: hidden;
+            background-color: orange;
+
+            ul {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+
+                li {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+
+                    .lun {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+
+                        a {
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+
+                            img {
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .bot {
+            position: absolute;
+            width: 455px;
+            height: 109px;
+            bottom: 65px;
+            border: 1px solid #ffffff;
+            overflow: hidden;
+
+            ul {
+                // position: absolute;
+                width: 100%;
+                height: 100%;
+                // left: 20px;
+
+                li {
+                    margin: 15px 20px 9px 20px;
+                    border-bottom: 1px dotted rgba(170, 170, 170, 0.4);
+
+                    span {
+                        font-size: 14px;
+                        color: #e5eb91;
+                    }
+
+                    a {
+                        font-size: 14px;
+                        color: #ffffff;
+                    }
+
+                    a:hover {
+                        color: #7bf5e0;
+                    }
+
+                    i {
+                        font-size: 14px;
+                        color: #fff;
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+
+    .subject-center {
+        width: 100%;
+        height: 1126px;
+        margin: 0;
+        padding: 0;
+        background-image: url(../upload/chara-bg.jpg);
+
+        .left {
+            width: 59.5px;
+            height: 59.5px;
+            position: absolute;
+            // background-color: red;
+            background-image: url(../image/left.png);
+            top: 30%;
+            left: 16%;
+            z-index: 2;
+        }
+
+        .right {
+            width: 59.5px;
+            height: 59.5px;
+            position: absolute;
+            // background-color: red;
+            background-image: url(../image/right.png);
+            top: 30%;
+            left: 36.5%;
+            z-index: 2;
+        }
+
+        .designation {
+            position: absolute;
+            width: 285px;
+            height: 482px;
+            // background-color: blue;
+            top: 27.8%;
+            left: 20%;
+
+            .baiying {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0);
+
+                .bylogo {
+                    position: absolute;
+                    width: 223px;
+                    height: 293px;
+                    margin: 32px 0px 0 20px;
+                    background-image: url(../upload/baiying/baiying-logo.png);
+                }
+
+                .byname {
+                    position: absolute;
+                    position: absolute;
+                    top: 75%;
+                    left: 15%;
+                    z-index: 2;
+
+                    ul {
+
+                        li {
+                            width: 203px;
+                            height: 59px;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .byimg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+            ul {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+
+                li {
+
+                    img {
+                        margin-top: -120px;
+                        margin-left: -136%;
+                    }
+                }
+            }
+        }
+    }
+
+    .subject-bottom {
+        position: relative;
+        width: 100%;
+        height: 1126px;
+        background-image: url(../upload/pics-bg.jpg);
+
+        .top {
+            position: absolute;
+            width: 14.6%;
+            height: 7.5%;
+            top: 13.3%;
+            left: 43.3%;
+            background-image: url(../upload/pics-title.png);
+        }
+
+        .dianji {
+            position: absolute;
+            width: 1139px;
+            height: 505px;
+            // background-color: blue;
+            top: 27%;
+            left: 21%;
+
+            ul {
+                display: inline-block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+
+                li {
+                    display: inline-block;
+                    width: 33%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    .subject-foot {
+        width: 100%;
+        height: 1126px;
+        background-image: url(../upload/story-bg.jpg);
+
+        .one {
+            width: 177px;
+            height: 83px;
+            margin: auto;
+            background-image: url(../upload/story-title.png);
+        }
+
+        .story {
+            width: 100%;
+            height: 514px;
+            margin-top: 220px;
+            line-height: 2.5;
+
+            p {
+                color: #ffffff;
+                font-size: 16px;
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+    }
+}
