@@ -1,0 +1,18 @@
+.toop {
+    position: relative;
+    width: 17rem;
+    height: 2rem;
+    /* margin-top: 0.5rem; */
+    line-height: 2rem;
+    border-bottom: 1px solid rgba(170,170,170,.4);
+}
+
+.toop a {
+    position: absolute;
+    width: 77%;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #ffffff;
+}

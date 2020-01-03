@@ -1,0 +1,66 @@
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (width: 320px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+@media screen and (width: 375px) {
+  body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (width: 414px) {
+  body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (width: 768px) {
+  body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.first {
+  width: 100%;
+  height: 100%;
+}
+
+.first .negative {
+  background-image: url(../upload/bg.jpg);
+  background-size: 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.first .negative .chuzhan {
+  margin-top: 22rem;
+}
+
+.first .negative .chuzhan img {
+  width: 100%;
+  height: 100%;
+}
+
+.first .negative .chuzhan em {
+  font-size: 0.8rem;
+  position: absolute;
+  color: #7bf5e0;
+  margin: 0.5rem 0 0 6rem;
+}
+/*# sourceMappingURL=index.css.map */

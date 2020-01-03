@@ -1,70 +1,451 @@
-html {
+$one: 320px;
+$two: 375px;
+$three: 414px;
+
+// iphone 5/SE
+@media screen and (width: $one) {
+    html {
+        font-size: $one / 20;
+    }
+}
+
+// iphone6/7/8
+@media screen and (width: $two) {
+    html {
+        font-size: $two / 20;
+    }
+}
+
+// iphone6/7/8 plus
+@media screen and (width: $three) {
+    html {
+        font-size: $three / 20;
+    }
+}
+
+html,
+body {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
-}
-
-$one: 320px;
-$two: 375px;
-$three: 414px;
-$four: 768px;
-
-@media screen and (width: $one) {
-    body {
-        font-size: 20px;
-    }
-}
-
-@media screen and (width: $two) {
-    body {
-        position: relative;
-        width: 100%;
-        height: 100%;
-    }
-}
-
-@media screen and (width: $three) {
-    body {
-        position: relative;
-        width: 100%;
-        height: 100%;
-    }
-}
-
-@media screen and (width: $four) {
-    body {
-        position: relative;
-        width: 100%;
-        height: 100%;
-    }
+    background-color: #000000;
 }
 
 .first {
-    // position: relative;
+    position: relative;
     width: 100%;
-    height: 100%;
+    height: 32.125rem;
 
     .negative {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-size: 20rem;
         background-image: url(../upload/bg.jpg);
-        background-size: 100%;
+
+        img {
+            width: 6.25rem;
+            height: 2.8125rem;
+            margin-top: 0.8rem;
+            margin-left: 0.3rem;
+        }
+
+        i {
+            position: absolute;
+            width: 2rem;
+            height: 2rem;
+            background-image: url(../image/下载.png);
+            background-size: 2rem;
+            background-position: 0px 0;
+            top: 0.9rem;
+            right: 1rem;
+        }
+
+        .libao {
+            position: absolute;
+            width: 4.5625rem;
+            height: 4.125rem;
+            right: 1rem;
+            top: 4rem;
+            background-size: 5rem;
+            background-image: url(../image/gift.png);
+            background-position: -8px -1px;
+        }
+
+        .chuzhan {
+            position: absolute;
+            top: 22rem;
+
+            em {
+                position: absolute;
+                font-size: 0.9rem;
+                width: 8.375rem;
+                height: 0.9375rem;
+                left: 6.3rem;
+                color: #7bf5e0;
+            }
+
+            a {
+
+                img {
+                    width: 100%;
+                    margin: 0;
+                    height: 4.8125rem;
+                }
+            }
+        }
+
+        .xaizai {
+            position: absolute;
+            width: 100%;
+            height: 3.1875rem;
+            top: 26rem;
+
+            a {
+                position: absolute;
+                width: 8.4375rem;
+                height: 3rem;
+
+                img {
+                    margin: 0;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+.second {
+    position: relative;
+    width: 100%;
+    height: 32.2rem;
+    background-image: url(../image/news-bg.jpg);
+    background-size: 20rem;
+
+    .lunbo {
+        // position: absolute;
+        width: 18.9375rem;
+        height: 9.375rem;
+        // background-color: red;
+        padding: 2rem 0.4rem 0 0.6rem;
+        overflow: hidden;
+
+        ul {
+            // position: absolute;
+            width: 300%;
+            height: 100%;
+            // background-color: orange;
+
+            li {
+                // position: absolute;
+                width: 33.333%;
+                height: 100%;
+                display: inline-block;
+
+                a {
+                    // position: absolute;
+                    width: 100%;
+                    height: 100%;
+
+                    img {
+                        // position: absolute;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .sol {
+        // position: relative;
+        width: 100%;
+        height: 0.1rem;
+        margin-top: 1rem;
+        // top: 12rem;
+        border-bottom: 2px solid green;
+    }
+
+    .zixun {
+        width: 12.6785rem;
+        height: 2.0625rem;
+        background-image: url(../image/news-title.png);
+        background-size: 13rem;
+        background-position: 0 0;
+        margin: 1.5rem auto 0;
+    }
+
+    .notice {
+        width: 18.875rem;
+        height: 17rem;
+        margin: 0.5rem 0.5rem 0rem 0.55rem;
+        // background-color: #7bf5e0;
+
+        .head {
+            width: 18.875rem;
+            height: 1.625rem;
+
+            ul {
+                position: relative;
+                width: 100%;
+                height: 100%;
+
+                li {
+                    display: inline-block;
+                    width: 19.04%;
+                    height: 100%;
+                    text-align: center;
+                    line-height: 1.625rem;
+                    font-size: 16px;
+                    background-color: #1c1d1f;
+                    color: #ffffff;
+                }
+
+                li:nth-child(1) {
+                    background-color: #1fd2b3;
+                }
+            }
+        }
+
+        .content {
+            position: relative;
+            background-color: #0b0715;
+
+            .cen {
+                position: relative;
+                width: 90%;
+                margin: 0 auto;
+
+                span {
+                    float: right;
+                    color: #8b8b8d;
+                }
+            }
+        }
+
+        .more {
+            position: relative;
+            width: 3.25rem;
+            height: 0.625rem;
+            float: right;
+            margin: 0.4rem 0 0 0;
+
+            a {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-image: url(../image/btn-more.png);
+                background-size: 3.2rem;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
+
+.third {
+    position: relative;
+    width: 100%;
+    height: 32.2rem;
+    background-size: 20rem;
+    background-image: url(../image/chara-bg.jpg);
+
+    .dian {
         position: absolute;
         width: 100%;
         height: 100%;
 
-        .chuzhan {
-            margin-top: 22rem;
+        ul {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+            li {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+
+                img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    .left {
+        position: absolute;
+        width: 2.75rem;
+        height: 2.75rem;
+        background-image: url(../image/prev-active.png);
+        background-repeat: no-repeat;
+        background-size: 3rem;
+        left: 1rem;
+        top: 15rem;
+    }
+
+    .right {
+        position: absolute;
+        width: 2.75rem;
+        height: 2.75rem;
+        background-image: url(../image/next-active.png);
+        background-repeat: no-repeat;
+        background-size: 3rem;
+        right: 1rem;
+        top: 15rem;
+    }
+}
+
+.forth {
+    position: relative;
+    width: 100%;
+    height: 32.2rem;
+    background-size: 20rem;
+    background-image: url(../image/story-bg.jpg);
+    overflow: hidden;
+
+    .outlook {
+        position: absolute;
+        width: 6.25rem;
+        height: 2.625rem;
+        background-image: url(../image/story-title.png);
+        background-repeat: no-repeat;
+        background-size: 6rem;
+        margin: 2.5rem 7rem 0 7rem;
+    }
+
+    .story {
+        position: absolute;
+        width: 100%;
+        height: 37.4375rem;
+        top: 6rem;
+        // background-color: #1fd2b3;
+        text-align: center;
+        line-height: 1rem;
+
+        p {
+            margin: 1rem 1rem 0rem 1rem;
+            color: #ffffff;
+        }
+    }
+}
+
+.fifth {
+    position: relative;
+    width: 100%;
+    height: 33.4375rem;
+    top: 1rem;
+    // background-color: pink;
+
+    .picte {
+        // position: absolute;
+        width: 100%;
+        height: 8.6375rem;
+        // background-color: black;
+
+        .erweima {
+            position: absolute;
+            width: 8.5625rem;
+            height: 100%;
+
+            img:nth-child(1) {
+                width: 8.5625rem;
+                height: 7.75rem;
+            }
+
+            img:nth-child(2) {
+                position: absolute;
+                width: 6.75rem;
+                height: 6.75rem;
+                left: 0.24rem;
+                top: 0.8rem;
+            }
+        }
+
+        .picturimg {
+            position: absolute;
+            width: 7.375rem;
+            height: 7.6875rem;
+            right: 0.5rem;
 
             img {
+                position: absolute;
                 width: 100%;
                 height: 100%;
             }
+        }
+    }
 
-            em {
-                font-size: 0.8rem;
+    .weilun {
+        // position: relative;
+        width: 100%;
+        height: 3.9375rem;
+        // background-color: blue;
+
+        a:nth-child(1) {
+            position: absolute;
+            width: 9rem;
+            height: 3.9375rem;
+            left: 0;
+            // background-color: purple;
+        }
+
+        a:nth-child(2) {
+            position: absolute;
+            width: 9rem;
+            height: 3.9375rem;
+            right: 0;
+            // background-color: burlywood;
+        }
+
+        a {
+            img {
                 position: absolute;
-                color: #7bf5e0;
-                margin: 0.5rem 0 0 6rem;
+                width: 100%;
+                height: 3rem;
+            }
+        }
+    }
+
+    .phone {
+        width: 18.8125rem;
+        height: 7.6875rem;
+        margin: 0rem auto;
+        overflow: hidden;
+        border-top: 1px solid rgba(170, 170, 170, 0.4);
+        border-bottom: 1px solid rgba(170, 170, 170, 0.4);
+        border-left: 1px solid rgba(170, 170, 170, 0.4);
+        border-right: 1px solid rgba(170, 170, 170, 0.4);
+
+        .cenn {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            color: #ffffff;
+            padding: 0.2rem 0 0 0.9rem;
+            line-height: 1.9rem;
+        }
+    }
+
+    .relation {
+        position: relative;
+        width: 19.125rem;
+        height: 3rem;
+        margin: 1rem 0.5rem 0rem 0.5rem;
+        // background-color: cornflowerblue;
+
+        a {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
             }
         }
     }

@@ -1,66 +1,423 @@
-html {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
+@charset "UTF-8";
 @media screen and (width: 320px) {
-  body {
-    font-size: 20px;
+  html {
+    font-size: 16px;
   }
 }
 
 @media screen and (width: 375px) {
-  body {
-    position: relative;
-    width: 100%;
-    height: 100%;
+  html {
+    font-size: 18.75px;
   }
 }
 
 @media screen and (width: 414px) {
-  body {
-    position: relative;
-    width: 100%;
-    height: 100%;
+  html {
+    font-size: 20.7px;
   }
 }
 
-@media screen and (width: 768px) {
-  body {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
 }
 
 .first {
+  position: relative;
   width: 100%;
-  height: 100%;
+  height: 32.125rem;
 }
 
 .first .negative {
-  background-image: url(../upload/bg.jpg);
-  background-size: 100%;
   position: absolute;
   width: 100%;
   height: 100%;
+  background-size: 20rem;
+  background-image: url(../upload/bg.jpg);
+}
+
+.first .negative img {
+  width: 6.25rem;
+  height: 2.8125rem;
+  margin-top: 0.8rem;
+  margin-left: 0.3rem;
+}
+
+.first .negative i {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  background-image: url(../image/下载.png);
+  background-size: 2rem;
+  background-position: 0px 0;
+  top: 0.9rem;
+  right: 1rem;
+}
+
+.first .negative .libao {
+  position: absolute;
+  width: 4.5625rem;
+  height: 4.125rem;
+  right: 1rem;
+  top: 4rem;
+  background-size: 5rem;
+  background-image: url(../image/gift.png);
+  background-position: -8px -1px;
 }
 
 .first .negative .chuzhan {
-  margin-top: 22rem;
+  position: absolute;
+  top: 22rem;
 }
 
-.first .negative .chuzhan img {
+.first .negative .chuzhan em {
+  position: absolute;
+  font-size: 0.9rem;
+  width: 8.375rem;
+  height: 0.9375rem;
+  left: 6.3rem;
+  color: #7bf5e0;
+}
+
+.first .negative .chuzhan a img {
+  width: 100%;
+  margin: 0;
+  height: 4.8125rem;
+}
+
+.first .negative .xaizai {
+  position: absolute;
+  width: 100%;
+  height: 3.1875rem;
+  top: 26rem;
+}
+
+.first .negative .xaizai a {
+  position: absolute;
+  width: 8.4375rem;
+  height: 3rem;
+}
+
+.first .negative .xaizai a img {
+  margin: 0;
+  position: absolute;
   width: 100%;
   height: 100%;
 }
 
-.first .negative .chuzhan em {
-  font-size: 0.8rem;
+.second {
+  position: relative;
+  width: 100%;
+  height: 32.2rem;
+  background-image: url(../image/news-bg.jpg);
+  background-size: 20rem;
+}
+
+.second .lunbo {
+  width: 18.9375rem;
+  height: 9.375rem;
+  padding: 2rem 0.4rem 0 0.6rem;
+  overflow: hidden;
+}
+
+.second .lunbo ul {
+  width: 300%;
+  height: 100%;
+}
+
+.second .lunbo ul li {
+  width: 33.333%;
+  height: 100%;
+  display: inline-block;
+}
+
+.second .lunbo ul li a {
+  width: 100%;
+  height: 100%;
+}
+
+.second .lunbo ul li a img {
+  width: 100%;
+  height: 100%;
+}
+
+.second .sol {
+  width: 100%;
+  height: 0.1rem;
+  margin-top: 1rem;
+  border-bottom: 2px solid green;
+}
+
+.second .zixun {
+  width: 12.6785rem;
+  height: 2.0625rem;
+  background-image: url(../image/news-title.png);
+  background-size: 13rem;
+  background-position: 0 0;
+  margin: 1.5rem auto 0;
+}
+
+.second .notice {
+  width: 18.875rem;
+  height: 17rem;
+  margin: 0.5rem 0.5rem 0rem 0.55rem;
+}
+
+.second .notice .head {
+  width: 18.875rem;
+  height: 1.625rem;
+}
+
+.second .notice .head ul {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.second .notice .head ul li {
+  display: inline-block;
+  width: 19.04%;
+  height: 100%;
+  text-align: center;
+  line-height: 1.625rem;
+  font-size: 16px;
+  background-color: #1c1d1f;
+  color: #ffffff;
+}
+
+.second .notice .head ul li:nth-child(1) {
+  background-color: #1fd2b3;
+}
+
+.second .notice .content {
+  position: relative;
+  background-color: #0b0715;
+}
+
+.second .notice .content .cen {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.second .notice .content .cen span {
+  float: right;
+  color: #8b8b8d;
+}
+
+.second .notice .more {
+  position: relative;
+  width: 3.25rem;
+  height: 0.625rem;
+  float: right;
+  margin: 0.4rem 0 0 0;
+}
+
+.second .notice .more a {
   position: absolute;
-  color: #7bf5e0;
-  margin: 0.5rem 0 0 6rem;
+  width: 100%;
+  height: 100%;
+  background-image: url(../image/btn-more.png);
+  background-size: 3.2rem;
+  background-repeat: no-repeat;
+}
+
+.third {
+  position: relative;
+  width: 100%;
+  height: 32.2rem;
+  background-size: 20rem;
+  background-image: url(../image/chara-bg.jpg);
+}
+
+.third .dian {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.third .dian ul {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.third .dian ul li {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.third .dian ul li img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.third .left {
+  position: absolute;
+  width: 2.75rem;
+  height: 2.75rem;
+  background-image: url(../image/prev-active.png);
+  background-repeat: no-repeat;
+  background-size: 3rem;
+  left: 1rem;
+  top: 15rem;
+}
+
+.third .right {
+  position: absolute;
+  width: 2.75rem;
+  height: 2.75rem;
+  background-image: url(../image/next-active.png);
+  background-repeat: no-repeat;
+  background-size: 3rem;
+  right: 1rem;
+  top: 15rem;
+}
+
+.forth {
+  position: relative;
+  width: 100%;
+  height: 32.2rem;
+  background-size: 20rem;
+  background-image: url(../image/story-bg.jpg);
+  overflow: hidden;
+}
+
+.forth .outlook {
+  position: absolute;
+  width: 6.25rem;
+  height: 2.625rem;
+  background-image: url(../image/story-title.png);
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  margin: 2.5rem 7rem 0 7rem;
+}
+
+.forth .story {
+  position: absolute;
+  width: 100%;
+  height: 37.4375rem;
+  top: 6rem;
+  text-align: center;
+  line-height: 1rem;
+}
+
+.forth .story p {
+  margin: 1rem 1rem 0rem 1rem;
+  color: #ffffff;
+}
+
+.fifth {
+  position: relative;
+  width: 100%;
+  height: 33.4375rem;
+  top: 1rem;
+}
+
+.fifth .picte {
+  width: 100%;
+  height: 8.6375rem;
+}
+
+.fifth .picte .erweima {
+  position: absolute;
+  width: 8.5625rem;
+  height: 100%;
+}
+
+.fifth .picte .erweima img:nth-child(1) {
+  width: 8.5625rem;
+  height: 7.75rem;
+}
+
+.fifth .picte .erweima img:nth-child(2) {
+  position: absolute;
+  width: 6.75rem;
+  height: 6.75rem;
+  left: 0.24rem;
+  top: 0.8rem;
+}
+
+.fifth .picte .picturimg {
+  position: absolute;
+  width: 7.375rem;
+  height: 7.6875rem;
+  right: 0.5rem;
+}
+
+.fifth .picte .picturimg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.fifth .weilun {
+  width: 100%;
+  height: 3.9375rem;
+}
+
+.fifth .weilun a:nth-child(1) {
+  position: absolute;
+  width: 9rem;
+  height: 3.9375rem;
+  left: 0;
+}
+
+.fifth .weilun a:nth-child(2) {
+  position: absolute;
+  width: 9rem;
+  height: 3.9375rem;
+  right: 0;
+}
+
+.fifth .weilun a img {
+  position: absolute;
+  width: 100%;
+  height: 3rem;
+}
+
+.fifth .phone {
+  width: 18.8125rem;
+  height: 7.6875rem;
+  margin: 0rem auto;
+  overflow: hidden;
+  border-top: 1px solid rgba(170, 170, 170, 0.4);
+  border-bottom: 1px solid rgba(170, 170, 170, 0.4);
+  border-left: 1px solid rgba(170, 170, 170, 0.4);
+  border-right: 1px solid rgba(170, 170, 170, 0.4);
+}
+
+.fifth .phone .cenn {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  padding: 0.2rem 0 0 0.9rem;
+  line-height: 1.9rem;
+}
+
+.fifth .relation {
+  position: relative;
+  width: 19.125rem;
+  height: 3rem;
+  margin: 1rem 0.5rem 0rem 0.5rem;
+}
+
+.fifth .relation a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.fifth .relation a img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=index.css.map */
