@@ -1,1 +1,99 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+@media screen and (width: 320px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (width: 375px) {
+  html {
+    font-size: 18.75px;
+  }
+}
+
+@media screen and (width: 414px) {
+  html {
+    font-size: 20.7px;
+  }
+}
+
+html,
+body {
+  width: 100%;
+  height: 1000%;
+  margin: 0;
+  padding: 0;
+}
+
+.head {
+  position: relative;
+  width: 100%;
+  height: 3.5625rem;
+  background-color: #000000;
+}
+
+.head .logo {
+  position: absolute;
+  width: 6.25rem;
+  height: 2.75rem;
+  background-image: url(../image/logo.png);
+  background-repeat: no-repeat;
+  background-size: 6rem;
+  top: 0.5rem;
+  left: 1rem;
+}
+
+.head .back {
+  position: absolute;
+  width: 3.5625rem;
+  height: 1.375rem;
+  background-color: #78f0de;
+  text-align: center;
+  line-height: 1.375rem;
+  right: 0.5rem;
+  top: 1.1rem;
+  border-radius: 0.3rem;
+}
+
+.conter {
+  width: 100%;
+  height: 24.625rem;
+  background-color: coral;
+}
+
+.conter .qingbao {
+  width: 12rem;
+  height: 2.25rem;
+  background-image: url(../image/title-news.png);
+  background-size: 12rem;
+  background-repeat: no-repeat;
+  margin: 0rem auto 0rem;
+}
+
+.conter .zhuti {
+  width: 18.875rem;
+  height: 17rem;
+  margin: 0.5rem 0.5rem 0rem 0.55rem;
+}
+
+.conter .zhuti .qing-nav {
+  width: 18.875rem;
+  height: 1.625rem;
+}
+
+.conter .zhuti .qing-nav ul {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.conter .zhuti .qing-nav ul li {
+  display: inline-block;
+  width: 19.04%;
+  height: 100%;
+  text-align: center;
+  line-height: 1.625rem;
+  font-size: 16px;
+  background-color: #1c1d1f;
+  color: #ffffff;
+}
+/*# sourceMappingURL=index.css.map */

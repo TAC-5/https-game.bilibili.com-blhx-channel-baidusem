@@ -1,0 +1,109 @@
+$one: 320px;
+$two: 375px;
+$three: 414px;
+
+// iphone 5/SE
+@media screen and (width: $one) {
+    html {
+        font-size: $one / 20;
+    }
+}
+
+// iphone6/7/8
+@media screen and (width: $two) {
+    html {
+        font-size: $two / 20;
+    }
+}
+
+// iphone6/7/8 plus
+@media screen and (width: $three) {
+    html {
+        font-size: $three / 20;
+    }
+}
+
+html,
+body {
+    width: 100%;
+    height: 1000%;
+    margin: 0;
+    padding: 0;
+    // background-color: #000000;
+}
+
+.head {
+    position: relative;
+    width: 100%;
+    height: 3.5625rem;
+    background-color: #000000;
+
+    .logo {
+        position: absolute;
+        width: 6.25rem;
+        height: 2.75rem;
+        background-image: url(../image/logo.png);
+        background-repeat: no-repeat;
+        background-size: 6rem;
+        top: 0.5rem;
+        left: 1rem;
+    }
+
+    .back {
+        position: absolute;
+        width: 3.5625rem;
+        height: 1.375rem;
+        background-color: #78f0de;
+        text-align: center;
+        line-height: 1.375rem;
+        right: 0.5rem;
+        top: 1.1rem;
+        border-radius: 0.3rem;
+    } 
+}
+
+.conter {
+    // position: relative;
+    width: 100%;
+    height: 24.625rem;
+    background-color: coral;
+
+    .qingbao {
+        // position: absolute;
+        width: 12rem;
+        height: 2.25rem;
+        background-image: url(../image/title-news.png);
+        background-size: 12rem;
+        background-repeat: no-repeat;
+        margin: 0rem auto 0rem ;
+    }
+
+    .zhuti {
+        width: 18.875rem;
+        height: 17rem;
+        margin: 0.5rem 0.5rem 0rem 0.55rem;
+        // background-color: #7bf5e0;
+
+        .qing-nav {
+            width: 18.875rem;
+            height: 1.625rem;
+
+            ul {
+                position: relative;
+                width: 100%;
+                height: 100%;
+
+                li {
+                    display: inline-block;
+                    width: 19.04%;
+                    height: 100%;
+                    text-align: center;
+                    line-height: 1.625rem;
+                    font-size: 16px;
+                    background-color: #1c1d1f;
+                    color: #ffffff;
+                }
+            }
+        }
+    }    
+}
