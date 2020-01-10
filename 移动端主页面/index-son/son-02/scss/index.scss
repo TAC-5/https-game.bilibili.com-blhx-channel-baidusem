@@ -204,5 +204,49 @@ body {
                 line-height: 1rem;
             }
         }
+
+        .erweima {
+            position: absolute;
+            width: 6.25rem;
+            height: 9.8125rem;
+            font-size: 0.5rem;
+            text-align: center;
+            top: 15rem;
+            left: 7rem;
+
+            img {
+                position: absolute;
+                display: block;
+                width: 6.125rem;
+                height: 6.125rem;
+            }
+        }
+
+        a {
+            position: absolute;
+            display: block;
+            left: 2rem;
+            bottom: 6.5rem;
+            width: 5.8125rem;
+            height: 1.6125rem;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url(../upload/microblog.png);
+        }
+    }
+}
+
+.third {
+    position: relative;
+    width: 100%;
+    height: 5.25rem;
+    margin-top: -5rem;
+    background-color: #000000;
+    color: #595959;
+
+    .wen {
+        padding: 1rem 0;
+        margin: 0 2rem;
     }
 }

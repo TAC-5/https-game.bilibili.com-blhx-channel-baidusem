@@ -3,6 +3,7 @@ html {
     height: 100%;
     margin: 0;
     padding: 0;
+    background-color: #000000;
 }
 
 $one: 320px;
@@ -40,32 +41,127 @@ $four: 768px;
     }
 }
 
-.first {
-    // position: relative;
+div.first {
+    position: relative;
     width: 100%;
-    height: 100%;
+    height: 3.875rem;
+    background-color: #000000;
 
-    .negative {
-        background-image: url(../upload/bg.jpg);
-        background-size: 100%;
+    .logo {
+        background-image: url(../upload/logo.png);
+        width: 7.3125rem;
+        height: 3.25rem;
+        background-repeat: no-repeat;
+        background-size: 7rem;
+        text-align: center;
+    }
+
+    .biao {
         position: absolute;
+        top: 1.5rem;
+        right: 5rem;
+        height: 1.5rem;
+        width: 3.5rem;
+        /* height: 1rem; */
+        background-color: #78f0de;
+        border-radius: 0.5rem;
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+        text-align: center;
+    }
+
+    .home {
+        position: absolute;
+        top: 1.5rem;
+        right: 1rem;
+        height: 1.5rem;
+        width: 3.5rem;
+        /* height: 1rem; */
+        background-color: #78f0de;
+        border-radius: 0.5rem;
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+        text-align: center;
+    }
+}
+
+.scrent {
+    position: relative;
+
+    .news {
+        margin: .65rem auto .3rem;
+        background: url(../upload/title-news.png);
+        width: 14.0625rem;
+        height: 2.6875rem;
+        background-size: contain;
+    }
+
+    .new {
         width: 100%;
-        height: 100%;
+        // height: 269.25rem;
+        position: relative;
+        // width: 100%;
+        background-color: #0b0715;
+        text-align: center;
+        font-family: "Microsoft Yahei";
+        line-height: 1.2;
+        color: #e2e2e2;
 
-        .chuzhan {
-            margin-top: 22rem;
+        .new-top {
+            text-align: center;
+            margin-top: 2rem;
+            line-height: 2rem;
+        }
 
-            img {
-                width: 100%;
-                height: 100%;
-            }
+        .new-bottom {
+            position: relative;
+            font-size: 0.5rem;
+            text-align: left;
+            margin-top: 1rem;
+            padding: 1rem 0.9rem 0 0.9rem;
+            line-height: 1rem;
+            border-top: 0.1rem solid grey;
+        }
+    }
+}
 
-            em {
-                font-size: 0.8rem;
-                position: absolute;
-                color: #7bf5e0;
-                margin: 0.5rem 0 0 6rem;
-            }
+.bottom {
+    width: 100%;
+    height: 20rem;
+    background-color: #290430;
+
+    .picte {
+        width: 100%;
+        height: 14rem;
+        background-image: url(../upload/contact.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .kuang {
+        width: 17.9375rem;
+        height: 2.3125rem;
+        border: 2px solid #3cffdd;
+        margin: 0rem auto;
+
+        span {
+            position: absolute;
+            margin: 0.7rem;
+            color: #ffffff;
+            font-size: 0.5rem;
+        }
+    }
+
+    .where {
+        width: 100%;
+        height: 6.8125rem;
+        margin-top: 2rem;
+
+        p {
+            width: 18rem;
+            margin: 0rem 1rem;
+            font-size: 0.8rem;
+            color: #ffffff;
         }
     }
 }
